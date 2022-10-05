@@ -2,6 +2,7 @@ import './style.css';
 import Bbq from './bbq.jpg'
 import homeSection from './home.js';
 import menuSection from './menu.js';
+import aboutSection from './about.js';
 
 //Setting up the html 
 
@@ -64,18 +65,20 @@ document.body.appendChild(mainSection);
 // By default, we populate the main section with the home page 
 mainSection.appendChild(homeSection());
 
-// // Function that will generate our main section content if we click another header item
-// function changeSection(id) {
+home.onclick = function () {
 
-//     const children = mainSection.children;
-//     if(id = menu.id){
-//     if (document.getElementById(id).length == 0) {
-//         for (let i = 0; i < children.length; i++) {
-//             children[i].remove();
-//         }
-//         mainSection.appendChild(menuSection());
-//     }
-// }
+    const li = document.querySelectorAll('li');
+    const children = mainSection.children;
+    if (document.getElementById('homeDiv') === null) {
+        for (let i = 0; i < li.length; i++) {
+            li[i].style.color = 'white';
+        }
+        for (let i = 0; i < children.length; i++) {
+            children[i].remove();
+        }
+        mainSection.appendChild(homeSection());
+    } else return;
+}
 
 menu.onclick = function () {
 
@@ -90,15 +93,14 @@ menu.onclick = function () {
             children[i].remove();
         }
         mainSection.appendChild(menuSection());
-    }
-    else return;
+    } else return;
 }
 
-home.onclick = function () {
+about.onclick = function () {
 
     const li = document.querySelectorAll('li');
     const children = mainSection.children;
-    if (document.getElementById('homeDiv') === null) {
+    if (document.getElementById('aboutDiv') === null) {
         for (let i = 0; i < li.length; i++) {
             li[i].style.color = 'white';
         }
@@ -106,7 +108,6 @@ home.onclick = function () {
         for (let i = 0; i < children.length; i++) {
             children[i].remove();
         }
-        mainSection.appendChild(homeSection());
-    }
-    else return;
+        mainSection.appendChild(aboutSection());
+    } else return;
 }

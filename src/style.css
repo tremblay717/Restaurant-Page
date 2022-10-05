@@ -29,6 +29,7 @@ body {
     color: white;
     font-family: 'Bangers', cursive;
     font-size: 4vw;
+    padding: 3%
 }
 
 #mainSection {
@@ -55,7 +56,7 @@ ul {
 }
 
 .headerLi:hover {
-    color: #F14C0B;
+    color: #F14C0B !important;
 }
 
 #homeLeftDiv {
@@ -69,7 +70,6 @@ ul {
     width: 50%;
     height: fit-content;
 }
-
 
 .slogan {
     color: white;
@@ -85,10 +85,9 @@ ul {
 
 #menuDiv {
     padding: 2%;
-
 }
 
-#menuSectionDiv{
+#menuSectionDiv {
     color: #F14C0B;
     font-family: 'Roboto', sans-serif;
     font-size: 1.75vw;
@@ -127,7 +126,6 @@ ul {
 
 }
 
-
 #itemPrice {
     color: white;
     grid-row-start: 1;
@@ -136,5 +134,144 @@ ul {
     grid-column-end: 4;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25vw;
-    text-align: center;
+    text-align: right;
+}
+
+#aboutDiv {
+    padding: 2%;
+    display: flex;
+    gap: 1%;
+
+}
+
+#aboutLeftDiv {
+    display: grid;
+    gap: 15px;
+    width: 50%;
+    grid-template: 30vh 30vh / 20vw 20vw;
+    position: relative;
+}
+
+
+#1_Box {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#2_Box {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#3_Box {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2
+}
+
+#4_Box {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+img {
+    min-width: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+#aboutRightDiv {
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template: 50% 50% / auto;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: flex-start;
+
+}
+
+#aboutSpan,
+#hourSpan {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+
+}
+
+#aboutContent {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25vw;
+    text-align: justify;
+
+}
+
+.hoursDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.hoursGrid {
+    display: flex;
+    flex-direction: column;
+}
+
+.dayGrid>span,
+.dayGrid>p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+}
+
+.dayGrid {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    grid-template: 4vh / 15vw 5vw 5vw;
+}
+
+#dayName {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#open {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#close {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
