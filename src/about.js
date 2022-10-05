@@ -108,18 +108,18 @@ export default function aboutSection() {
         for (let i = 0; i < dayItems.length; i++) {
             dayGrid.appendChild(dayItems[i]);
         }
-        
+
         hoursGrid.appendChild(dayGrid);
     }
 
     // Creating day objects
-    const sunday    = new Day('Sunday', "11:00", "22:00");
-    const monday    = new Day('Monday', "10:00", "22:00");
-    const tuesday   = new Day('Tuesday', "10:00", "22:00");
+    const sunday = new Day('Sunday', "11:00", "22:00");
+    const monday = new Day('Monday', "10:00", "22:00");
+    const tuesday = new Day('Tuesday', "10:00", "22:00");
     const wednesday = new Day('Wednesday', "10:00", "22:00");
-    const thursday  = new Day('Thursday', "10:00", "22:00");
-    const friday    = new Day('Friday', "10:00", "22:00");
-    const saturday  = new Day('Sunday', "11:00", "22:00");
+    const thursday = new Day('Thursday', "10:00", "22:00");
+    const friday = new Day('Friday', "10:00", "22:00");
+    const saturday = new Day('Sunday', "11:00", "22:00");
 
     aboutDiv.appendChild(rightDiv);
 

@@ -3,7 +3,7 @@ import SteakImg from './steak.jpg';
 export default function homeSection() {
 
     // Changing Home Color to Orange; 
-    const homeLi = document.getElementById('headerLiHome')
+    const homeLi = document.getElementById('headerLiHome');
     homeLi.style.color = '#F14C0B';
 
     // Creating a Div 
