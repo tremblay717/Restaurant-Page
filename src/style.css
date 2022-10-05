@@ -139,6 +139,7 @@ ul {
 
 #aboutDiv {
     padding: 2%;
+    height: max-content;
     display: flex;
     gap: 1%;
 
@@ -193,10 +194,10 @@ img {
 
 #aboutRightDiv {
     width: 50%;
-    height: 100%;
+    height: fit-content;
     padding: 2%;
     display: grid;
-    grid-template: 50% 50% / auto;
+    grid-template: auto auto / auto;
 }
 
 .aboutGrid {
