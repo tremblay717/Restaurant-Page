@@ -18,7 +18,7 @@ export default function homeSection() {
 
     const slogan = document.createElement('span');
     slogan.className = 'slogan';
-    slogan.textContent = "Enjoy our excellents grills";
+    slogan.textContent = "Enjoy our excellent grills";
     leftDiv.appendChild(slogan);
 
     const subSloganOne = document.createElement('p');

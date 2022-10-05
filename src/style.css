@@ -6,6 +6,7 @@ body {
     background-image: url(./bbq.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
 
 }
 
@@ -53,7 +54,7 @@ ul {
 
 }
 
-#headerLi:hover {
+.headerLi:hover {
     color: #F14C0B;
 }
 

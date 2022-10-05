@@ -18,7 +18,6 @@ restaurantTitle.className = 'RestaurantTitle';
 restaurantTitle.textContent = "Al's SteakHouse";
 leftHeader.appendChild(restaurantTitle);
 
-
 const rightHeader = document.createElement('div');
 rightHeader.setAttribute('style', 'display:flex;justify-content:center;width:50%')
 
@@ -32,7 +31,6 @@ home.textContent = 'Home';
 
 const menu = document.createElement('li');
 menu.className = 'headerLi';
-
 menu.id = 'headerLiMenu';
 menu.textContent = 'Menu';
 
@@ -56,14 +54,59 @@ headerBar.appendChild(leftHeader);
 headerBar.appendChild(rightHeader);
 document.body.appendChild(headerBar);
 
-/********************************************************************** */
-
+/***************************************************************************************************************************************************************************************/
 // Main section
+
 const mainSection = document.createElement('div');
 mainSection.id = 'mainSection';
-
-mainSection.appendChild(menuSection());
-
-
 document.body.appendChild(mainSection);
 
+// By default, we populate the main section with the home page 
+mainSection.appendChild(homeSection());
+
+// // Function that will generate our main section content if we click another header item
+// function changeSection(id) {
+
+//     const children = mainSection.children;
+//     if(id = menu.id){
+//     if (document.getElementById(id).length == 0) {
+//         for (let i = 0; i < children.length; i++) {
+//             children[i].remove();
+//         }
+//         mainSection.appendChild(menuSection());
+//     }
+// }
+
+menu.onclick = function () {
+
+    const li = document.querySelectorAll('li');
+    const children = mainSection.children;
+    if (document.getElementById('menuDiv') === null) {
+        for (let i = 0; i < li.length; i++) {
+            li[i].style.color = 'white';
+        }
+
+        for (let i = 0; i < children.length; i++) {
+            children[i].remove();
+        }
+        mainSection.appendChild(menuSection());
+    }
+    else return;
+}
+
+home.onclick = function () {
+
+    const li = document.querySelectorAll('li');
+    const children = mainSection.children;
+    if (document.getElementById('homeDiv') === null) {
+        for (let i = 0; i < li.length; i++) {
+            li[i].style.color = 'white';
+        }
+
+        for (let i = 0; i < children.length; i++) {
+            children[i].remove();
+        }
+        mainSection.appendChild(homeSection());
+    }
+    else return;
+}
