@@ -16,23 +16,27 @@
 } */
 
 body {
-    background-color: black;
+    /* background-color: black; */
     margin: 0px;
+    background-image: url(./bbq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-#content {
+/* #content {
     margin-left: 15vw;
     margin-right: 15vw;
     height: 90vh;
     background-color: darkgrey;
-}
+} */
 
 .hornImage {
     width: 100px;
     height: 100px;
 }
 
-p {
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Norse-Bold';
+.test {
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Norse-Bold'; */
 }
